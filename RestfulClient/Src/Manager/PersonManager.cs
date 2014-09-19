@@ -30,11 +30,7 @@ namespace RestfulClient.Manager
 
         public PersonDTO CreatePerson()
         {
-            PersonDTO person = new PersonDTO();
-            person.firstName = "Kieran";
-            person.lastName = "McGivern";
-            person.middleName = "M";
-            person.birthDate = new DateTime(1978, 11, 11);
+            PersonDTO person = CreatePersonDTO();
 
             string json = personAdapter.ConvertDtoToJson(person);
 
@@ -43,7 +39,6 @@ namespace RestfulClient.Manager
             return personAdapter.ConvertJsonToDto(responseJson);
         }
 
-
         public PersonDTO GetPerson(long id)
         {
             string json = client.GetPerson(id);
@@ -51,13 +46,21 @@ namespace RestfulClient.Manager
             return personAdapter.ConvertJsonToDto(json);
         }
 
-
-
         public List<PersonDTO> GetAllPeople()
         {
             string json = client.GetAllPeople();
             return personAdapter.ConvertJsonToDtoList(json);
             
+        }
+
+        private PersonDTO CreatePersonDTO()
+        {
+            PersonDTO person = new PersonDTO();
+            person.firstName = "Bob";
+            person.lastName = "Jones";
+            person.middleName = "M";
+            person.birthDate = new DateTime(1977, 11, 11);
+            return person;
         }
     }
 }
