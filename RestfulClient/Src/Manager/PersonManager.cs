@@ -8,26 +8,19 @@ using RestfulClient.Adapter;
 
 namespace RestfulClient.Manager
 {
-    class PersonManager : IPersonManager
+    public class PersonManager : IPersonManager
     {
+
+        private IAdapter<PersonDTO> personAdapter;
+
+        private PeopleClient client;
+
         public PersonManager(IAdapter<PersonDTO> personAdapter, PeopleClient client)
         {
             this.personAdapter = personAdapter;
             this.client = client;
         }
-
-        private IAdapter<PersonDTO> personAdapter
-        {
-            set;
-            get;
-        }
-
-        private PeopleClient client
-        {
-            set;
-            get;
-        }
-
+        
         public PersonDTO CreatePerson()
         {
             PersonDTO person = CreatePersonDTO();

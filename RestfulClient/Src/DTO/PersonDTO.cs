@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RestfulClient.DTO
 {
-    class PersonDTO : BaseDTO
+    public class PersonDTO : BaseDTO
     {
         public String firstName
         {

@@ -6,7 +6,7 @@ using RestfulClient.DTO;
 
 namespace RestfulClient.Client
 {
-    interface PeopleClient
+    public interface PeopleClient
     {
         string GetPerson(long id);
 

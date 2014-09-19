@@ -6,7 +6,7 @@ using RestfulClient.DTO;
 
 namespace RestfulClient.Adapter
 {
-    interface IAdapter<T>
+    public interface IAdapter<T>
     {
         string ConvertDtoToJson(T dto);
 

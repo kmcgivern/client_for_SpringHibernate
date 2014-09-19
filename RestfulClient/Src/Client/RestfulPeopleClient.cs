@@ -9,7 +9,7 @@ using RestfulClient.DTO;
 
 namespace RestfulClient.Client
 {
-    class RestfulPeopleClient : PeopleClient
+    public class RestfulPeopleClient : PeopleClient
     {
         static string uri = "http://localhost:9000/people";
         static string uri_all = uri+ "/all";

@@ -1,0 +1,4 @@
+C:\Users\kmcgivern\Documents\Visual Studio 2010\Projects\RestfulClient\RestfulClientTests\bin\Debug\RestfulClientTests.dll
+C:\Users\kmcgivern\Documents\Visual Studio 2010\Projects\RestfulClient\RestfulClientTests\bin\Debug\RestfulClientTests.pdb
+C:\Users\kmcgivern\Documents\Visual Studio 2010\Projects\RestfulClient\RestfulClientTests\obj\Debug\RestfulClientTests.dll
+C:\Users\kmcgivern\Documents\Visual Studio 2010\Projects\RestfulClient\RestfulClientTests\obj\Debug\RestfulClientTests.pdb

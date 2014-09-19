@@ -8,7 +8,7 @@ using Newtonsoft.Json.Converters;
 
 namespace RestfulClient.Adapter
 {
-    class PersonAdapter<PersonDTO> : IAdapter<PersonDTO>
+    public class PersonAdapter<PersonDTO> : IAdapter<PersonDTO>
     {
         public string ConvertDtoToJson(PersonDTO dto)
         {

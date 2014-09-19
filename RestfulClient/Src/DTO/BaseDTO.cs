@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RestfulClient.DTO
 {
-    class BaseDTO
+    public class BaseDTO
     {
 
         public long id
